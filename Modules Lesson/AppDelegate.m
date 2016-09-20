@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ITMediator.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [ITMediator instance].window = self.window;
+    [[ITMediator instance] show];
     return YES;
 }
 

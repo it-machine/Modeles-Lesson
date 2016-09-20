@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Fuw-wS-gjF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XcF-iz-5NH">
+            <objects>
+                <viewController storyboardIdentifier="ITViewController" id="Fuw-wS-gjF" customClass="ITViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9gk-fv-Sjw"/>
+                        <viewControllerLayoutGuide type="bottom" id="ove-ZS-LvN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7du-fT-fjf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhQ-bN-04P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="213"/>
+        </scene>
+        <!--Header View Controller-->
+        <scene sceneID="ctf-sH-hUk">
+            <objects>
+                <viewController storyboardIdentifier="ITHeaderViewController" id="Cg9-QF-YAc" customClass="ITHeaderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kla-PG-QKl"/>
+                        <viewControllerLayoutGuide type="bottom" id="tDG-qa-gXd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zKS-64-mVW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="45"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJS-tN-Ulw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="-67"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="KAb-AB-dvb">
+            <objects>
+                <viewController storyboardIdentifier="ITProductViewController" id="x03-hs-bi6" customClass="ITProductViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jE1-Ak-rY2"/>
+                        <viewControllerLayoutGuide type="bottom" id="mrL-I7-tOr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mkf-dU-3rd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qhy-C8-X8i">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x03-hs-bi6" id="pxi-cI-wDz"/>
+                                    <outlet property="delegate" destination="x03-hs-bi6" id="cGc-jB-qam"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Qhy-C8-X8i" secondAttribute="trailing" id="2Kb-7l-cy3"/>
+                            <constraint firstItem="Qhy-C8-X8i" firstAttribute="top" secondItem="jE1-Ak-rY2" secondAttribute="bottom" id="Gc3-jh-rrs"/>
+                            <constraint firstItem="Qhy-C8-X8i" firstAttribute="leading" secondItem="mkf-dU-3rd" secondAttribute="leading" id="d9w-3B-bCU"/>
+                            <constraint firstItem="mrL-I7-tOr" firstAttribute="top" secondItem="Qhy-C8-X8i" secondAttribute="bottom" id="g30-IP-CcX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Qhy-C8-X8i" id="Ev5-pR-CIX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYu-Jb-7IG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="291"/>
+        </scene>
+        <!--Contacts View Controller-->
+        <scene sceneID="bke-w2-Uaa">
+            <objects>
+                <viewController storyboardIdentifier="ITContactsViewController" id="B1K-9h-ZdU" customClass="ITContactsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7QK-ao-9gu"/>
+                        <viewControllerLayoutGuide type="bottom" id="C13-w5-RG2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fkZ-lE-Y2t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restore.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lO7-eD-VvE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="UrE-I8-uZr"/>
+                                    <constraint firstAttribute="height" constant="128" id="iVY-pF-XLD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наш магазин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipl-DD-9mB">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="пр. Обуховской обороны, 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrI-ny-juX">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ipl-DD-9mB" firstAttribute="leading" secondItem="fkZ-lE-Y2t" secondAttribute="leading" constant="16" id="3Kv-xq-xKe"/>
+                            <constraint firstItem="vrI-ny-juX" firstAttribute="top" secondItem="Ipl-DD-9mB" secondAttribute="bottom" constant="8" id="EhV-1Q-M1h"/>
+                            <constraint firstItem="lO7-eD-VvE" firstAttribute="centerX" secondItem="fkZ-lE-Y2t" secondAttribute="centerX" id="Mbf-6v-cch"/>
+                            <constraint firstItem="Ipl-DD-9mB" firstAttribute="top" secondItem="lO7-eD-VvE" secondAttribute="bottom" constant="31" id="Tys-A6-2B3"/>
+                            <constraint firstItem="lO7-eD-VvE" firstAttribute="top" secondItem="7QK-ao-9gu" secondAttribute="bottom" constant="20" id="as4-9D-15i"/>
+                            <constraint firstAttribute="trailing" secondItem="Ipl-DD-9mB" secondAttribute="trailing" constant="16" id="bK8-Vq-O2F"/>
+                            <constraint firstItem="vrI-ny-juX" firstAttribute="leading" secondItem="Ipl-DD-9mB" secondAttribute="leading" id="ik0-cD-ClE"/>
+                            <constraint firstItem="vrI-ny-juX" firstAttribute="trailing" secondItem="Ipl-DD-9mB" secondAttribute="trailing" id="wYq-Q1-cQo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactsAdressLabel" destination="vrI-ny-juX" id="XXy-tD-Y5a"/>
+                        <outlet property="contactsImageView" destination="lO7-eD-VvE" id="qKy-cG-PeD"/>
+                        <outlet property="contactsTitleLabel" destination="Ipl-DD-9mB" id="eIM-1f-Lcg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BO7-ex-vo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.8" y="212.74362818590706"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="restore.jpg" width="650" height="438"/>
+    </resources>
+</document>

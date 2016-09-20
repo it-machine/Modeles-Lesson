@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ITHeaderViewCell" id="iN0-l3-epB" customClass="ITHeaderViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElJ-4j-cFQ">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="nkE-dP-025"/>
+                        <constraint firstAttribute="height" constant="20" id="pQg-cF-G6c"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бар" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jm-xd-xP8">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as4-1x-1Ml"/>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="as4-1x-1Ml" secondAttribute="trailing" id="3WJ-sM-7yS"/>
+                <constraint firstAttribute="trailing" secondItem="8jm-xd-xP8" secondAttribute="trailing" constant="1" id="AdC-jc-rgv"/>
+                <constraint firstItem="ElJ-4j-cFQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="F65-QS-fEX"/>
+                <constraint firstItem="8jm-xd-xP8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="NRU-io-qGH"/>
+                <constraint firstItem="8jm-xd-xP8" firstAttribute="leading" secondItem="ElJ-4j-cFQ" secondAttribute="trailing" id="NaB-Lo-tZH"/>
+                <constraint firstItem="ElJ-4j-cFQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VMS-kG-Wr8"/>
+                <constraint firstItem="as4-1x-1Ml" firstAttribute="leading" secondItem="ElJ-4j-cFQ" secondAttribute="trailing" id="aL2-we-81f"/>
+                <constraint firstItem="as4-1x-1Ml" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mJg-ki-uqj"/>
+                <constraint firstAttribute="bottom" secondItem="as4-1x-1Ml" secondAttribute="bottom" id="uxz-7H-vdj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAction" destination="as4-1x-1Ml" id="r2a-R7-kff"/>
+                <outlet property="customLabel" destination="8jm-xd-xP8" id="F8p-Vc-Lph"/>
+                <outlet property="viewSeparator" destination="ElJ-4j-cFQ" id="nTP-IR-Ppt"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="456"/>
+        </view>
+    </objects>
+</document>
