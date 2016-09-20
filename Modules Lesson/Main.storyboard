@@ -15,11 +15,10 @@
                         <viewControllerLayoutGuide type="bottom" id="ove-ZS-LvN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7du-fT-fjf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JhQ-bN-04P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +53,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mrL-I7-tOr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mkf-dU-3rd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qhy-C8-X8i">
@@ -90,7 +89,7 @@
                         <viewControllerLayoutGuide type="bottom" id="C13-w5-RG2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fkZ-lE-Y2t">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restore.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lO7-eD-VvE">

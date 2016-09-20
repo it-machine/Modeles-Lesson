@@ -38,16 +38,12 @@ static NSString* identifierViewController = @"ITViewController";
                          delegate:(id<ITDelegateInterface>)delegate{
     
     ITViewController* itViewController = [self itViewControllerFromStoryboard];
-    
-    UINavigationController* navController = [[UINavigationController alloc] initWithRootViewController:itViewController];
-    
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:itViewController];
     self.userInterface = itViewController;
     [self configureDependencies];
-    self.navigationController = navController;
-    window.rootViewController = self.userInterface;
+     window.rootViewController = navController;
     [window makeKeyAndVisible];
     [self.userInterface.view setFrame:window.frame];
-    
     // Submodule
     [self setDelegate:delegate];
     [self presentITHeader];
@@ -70,11 +66,11 @@ static NSString* identifierViewController = @"ITViewController";
     presenter.router = self;
     self.presenter = presenter;
     
-    self.userInterface.presenter = presenter;
+    self.userInterface.presenter = (id)presenter;
     self.presenter.userInterface = self.userInterface;
     
     self.presenter.interactor = interactor;
-    interactor.presenter = presenter;
+    interactor.presenter = (id)presenter;
 }
 
 -(ITViewController*)itViewControllerFromStoryboard{
@@ -102,14 +98,14 @@ static NSString* identifierViewController = @"ITViewController";
 -(void)presentProducts{
     [self cleanSubview:self.userInterface.bodyContainer];
     ITProductsRouter* router = [ITProductsRouter new];
-    [router presentITProductInterfaceFromViewController:self.userInterface container:self.userInterface.bodyContainer delegate:self.presenter];
+    [router presentITProductInterfaceFromViewController:self.userInterface container:self.userInterface.bodyContainer delegate:(id)self.presenter];
     self.productsRouter = router;
 }
 
 -(void)presentContacts{
     [self cleanSubview:self.userInterface.bodyContainer];
     ITContactsRouter* router = [ITContactsRouter new];
-    [router presentITContactsInterfaceFromViewController:self.userInterface container:self.userInterface.bodyContainer delegate:self.presenter];
+    [router presentITContactsInterfaceFromViewController:self.userInterface container:self.userInterface.bodyContainer delegate:(id)self.presenter];
     self.contactsRouter = router;
 }
 

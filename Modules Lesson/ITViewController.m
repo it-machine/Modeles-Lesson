@@ -13,7 +13,6 @@
 @end
 
 @implementation ITViewController{
-    UISearchController*_searchController;
     UIView* p_headerView;
     UIView* p_bodyView;
 }
@@ -28,6 +27,10 @@
     [self initViewContainer];
 }
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 -(void)configNavigationController{
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.navigationController.navigationBar.translucent = NO;
@@ -37,7 +40,6 @@
     
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self setNeedsStatusBarAppearanceUpdate];
 }
 
@@ -58,7 +60,7 @@
     [p_headerView setFrame:rectHeader];
     positionY += 45.f;
     
-    CGRect rectBody = CGRectMake(0, positionY, width, CGRectGetHeight(self.view.frame) - positionY - 50.f);
+    CGRect rectBody = CGRectMake(0, positionY, width, CGRectGetHeight(self.view.frame) - positionY);
     [p_bodyView setFrame:rectBody];
     
 }

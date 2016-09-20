@@ -37,7 +37,7 @@
     if(!self.router)
         self.router = [ITRouter new];
     
-    [self.router presentInterfaceFromWindow:self.window delegate:self];
+    [self.router presentInterfaceFromWindow:self.window delegate:(id)self];
     
 }
 @end
